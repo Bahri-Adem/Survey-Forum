@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html id="main">
+  <style>
+    html {
+  background-color: #7FFFD4;
+  font-family: 'Raleway', Helvetica;
+    text-align: center;
+}
+
+section {
+  background-color: #F8F8FF; 
+  width: 75%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0.25em;
+  border-radius: 5px;
+}
+
+#description {
+  margin-top: 1.5em;
+}
+
+.right {
+  display: inline-block;
+  text-align: right;
+  margin: 10px 0;
+  width: 25%;
+  vertical-align: top;
+}
+
+.left {
+  display: inline-block;
+  text-align: left;
+  margin: 10px;
+  width: 25%;
+  vertical-align: top;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.vertical {
+  display: block;
+  margin: 0.5em 0;
+}
+
+select {
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid #c0c0c0;
+}
+
+#textarea {
+  width: 14em;
+  height: 4em;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+#submit {
+  background-color: #00b5cc;
+  color: white;
+  border: 0.5rem solid #00b5cc;
+  border-radius: 5px;
+  margin: 1.25em;
+  padding: 0.2em 1em;
+  font-size: 1rem;
+  text-align: center;
+}
+  </style>
+  <header>
+<h1 id="title" style="text-align:center;">Survey Form </h1> 
+    </header>
+  <section>
+    <p id="description">
+            What does your Software Development profile looks like?
+          </p>
+  <form id="survey-form">
+ <div class="row">
+      <div class="right">
+        <label for="name" id="name-label">* Name:</label>
+      </div>
+      <div class="left">
+        <input id="name" type="text" placeholder="Enter your name" required/>
+      </div>
+      </div>
+      <div class="row">
+      <div class="right">
+        <label for="email" id="email-label">* Email:</label>
+      </div>
+      <div class="left">
+        <input id="email" type="email" placeholder="Enter your email" required/>
+      </div>
+      </div>
+      <div class="row">
+      <div class="right">
+        <label for="number" id="number-label">* Age:</label>
+      </div>
+      <div class="left">
+        <input id="number" type="number" placeholder="Age" min="13" max="99" required/>
+      </div>
+      </div>
+    <div class="row">
+        <div class="right">
+        <label for="dropdown">*Which option best describes your current role?</label>
+          </div>
+      <div class="left">
+    <select id="dropdown" name="country">
+      <option value="Select an option" disabled>Select an option</option>
+          <option value="student" >Student</option>
+          <option value="fulltimejob" selected>Full Time Job</option>
+           <option value="fulltimelearner" >Full Time Learner</option>
+           <option value="prefernottosay" >Prefer Not to Say</option>
+           <option value="other" >Other</option>
+        </select>
+    </div>
+      </div>
+  <div class="row">
+      <div class="right">
+   <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+      </div>
+      <div class="left">
+        <label class="vertical" for="radio1"><input type="radio" id="radio1" name="radio-buttons" value="definitely">Definitely</label>
+        <label class="vertical" for="radio2"><input type="radio" id="radio2" name="radio-buttons" value="maybe">Maybe</label>
+        <label class="vertical" for="radio3"><input type="radio" id="radio3" name="radio-buttons" value="notsure">Not sure</label>
+      </div>
+      </div>
+   <div class="row">
+        <div class="right">
+          <label>*Things that should be improved in the future
+(Check all that apply):</label>
+        </div>
+        <div class="left">
+          <label class="vertical" for="box1"><input type="checkbox" id="box1" name="boxes" value="fe">Front-end Projects</label>
+        <label class="vertical" for="box2"><input type="checkbox" id="box2" name="boxes" value="be">Back-end Projects</label>
+        <label class="vertical" for="box3"><input type="checkbox" id="box3" name="boxes" value="dv">Data Visualization</label>
+        <label class="vertical" for="box4"><input type="checkbox" id="box4" name="boxes" value="ch">Challenges</label>
+        <label class="vertical" for="box5"><input type="checkbox" id="box5" name="boxes" value="occ">Open Source Community</label>
+        <label class="vertical" class="vertical" for="box6"><input type="checkbox" id="box6" name="boxes" value="ghr">Gitter help rooms</label>
+        <label class="vertical" for="box7"><input type="checkbox" id="box7" name="boxes" value="v">Videos</label>
+        <label class="vertical" for="box8"><input type="checkbox" id="box8" name="boxes" value="cm">City Meetups</label>
+        <label class="vertical" for="box9"><input type="checkbox" id="box9" name="boxes" value="w">Wiki</label>
+        <label class="vertical" for="box10"><input type="checkbox" id="box10" name="boxes" value="fr">Forum</label>
+        <label class="vertical" for="box11"><input type="checkbox" id="box11" name="boxes" value="ac">Additional Courses</label>
+        </div>
+      </div>
+     <div class="row">
+        <div class="right">
+          <label for="textarea">Any Comments or Suggestions?</label>
+        </div>
+        <div class="left">
+          <textarea id="textarea" name="area"placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+</form>
+</section>
+</html>
+
+<body>
+	
+</body>
+
+</html>
